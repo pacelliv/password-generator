@@ -1,0 +1,137 @@
+@font-face {
+    src: url("karla.regular.ttf");
+    font-family: Karla;
+}
+
+body {
+    margin:0;
+    background: #1C1C1C;
+    background-size: cover; 
+}
+
+#container {
+    width: 550px;
+    height: 550px;
+    margin: 3rem auto;
+    background: #1F2937;
+    border: 5px solid #FFFFFF;
+    border-radius: 20px;
+}
+
+.container-margin {
+    margin-left: 50px;
+}
+
+#container-title-one {
+    padding-top: 50px;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 40px;
+
+    /* or 100% */
+    letter-spacing: -0.025em;
+    color: #FFFFFF;
+}
+
+#container-title-two {
+    margin-top: -30px;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 40px;
+
+    /* or 100% */
+    letter-spacing: -0.025em;
+    color: #4ADF86;
+}
+
+h3 {
+    margin-top: -15px;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+
+    /* identical to box height, or 140% */
+
+    /* Medium grey */
+    color: #D5D4D8;
+}
+
+button {
+    margin-top: 50px;
+    background: #10B981;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    font-family: Karla;
+    color: #FFFFFF;
+    padding: 10px 20px;
+}
+
+#container-passwords {
+    margin-top: 40px;
+    border-top: 1px solid #2F3E53;
+    margin-left: 52px;
+    margin-right: 52px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.passwords {
+    margin-top: 21px;
+}
+
+.popuptext{
+    visibility: hidden;
+    font-family: "Karla";
+    font-size: 13px;
+    color: #D5D4D8; 
+}
+
+.popuptext.show {
+    opacity: 0;
+    visibility: visible;
+    -webkit-animation: fadeinout 5s;
+    animation: fadeinout 5s;
+}
+
+@-webkit-keyframes fadeinout {
+    50% { opacity: 1; }
+}
+
+@keyframes fadeinout {
+    50% { opacity: 1; }
+}
+
+.field-text {
+    margin-top: 3px;
+    width: 200px;
+    height: 39px;
+    background: #273549;
+    border-radius: 6px;
+    border: none;
+    padding-top: 5px;   
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+
+    /* identical to box height, or 200% */
+    text-align: center;
+    color: #55F991;
+    
+}
+
+.copy-msg {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+

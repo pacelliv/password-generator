@@ -3,135 +3,168 @@
     font-family: Karla;
 }
 
-body {
-    margin:0;
-    background: #1C1C1C;
-    background-size: cover; 
+* {
+    box-sizing: border-box;
 }
 
-#container {
-    width: 550px;
-    height: 550px;
-    margin: 3rem auto;
-    background: #1F2937;
-    border: 5px solid #FFFFFF;
+body {
+    margin: 0;
+    background: #1c1c1c;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Karla", sans-serif;
+}
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    background: #1f2937;
+    border: 5px solid #ffffff;
     border-radius: 20px;
 }
 
-.container-margin {
-    margin-left: 50px;
+.container-intro {
+    width: 80%;
+    margin: 0 auto;
+    line-height: 1.1;
 }
 
-#container-title-one {
-    padding-top: 50px;
-    font-family: 'Karla';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 40px;
-    line-height: 40px;
-
-    /* or 100% */
-    letter-spacing: -0.025em;
-    color: #FFFFFF;
+.container-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#container-title-two {
-    margin-top: -30px;
-    font-family: 'Karla';
+.container-titles {
     font-style: normal;
     font-weight: 800;
-    font-size: 40px;
-    line-height: 40px;
+    font-size: 2rem;
+    color: #ffffff;
+}
 
-    /* or 100% */
-    letter-spacing: -0.025em;
-    color: #4ADF86;
+.container-titles span {
+    color: #10b981;
 }
 
 h3 {
-    margin-top: -15px;
-    font-family: 'Karla';
+    margin: 0 0 0 0;
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
-
-    /* identical to box height, or 140% */
-
-    /* Medium grey */
-    color: #D5D4D8;
+    font-size: 1.25rem;
+    color: #d5d4d8;
 }
 
 button {
-    margin-top: 50px;
-    background: #10B981;
+    margin: 2em 0 0 0;
+    background: #10b981;
     border: none;
     border-radius: 6px;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-family: Karla;
-    color: #FFFFFF;
-    padding: 10px 20px;
+    color: #ffffff;
+    padding: 0.75em 1.25em;
+    transform: scale(1);
 }
 
-#container-passwords {
-    margin-top: 40px;
-    border-top: 1px solid #2F3E53;
-    margin-left: 52px;
-    margin-right: 52px;
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
+button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+button:active {
+    opacity: 0.8;
+}
+
+.container-passwords {
+    margin: 2.5em 0 0 0;
+    padding-top: 1.3em;
+    border-top: 1px solid #2f3e53;
+    width: 60%;
 }
 
 .passwords {
-    margin-top: 21px;
-}
-
-.popuptext{
-    visibility: hidden;
-    font-family: "Karla";
-    font-size: 13px;
-    color: #D5D4D8; 
-}
-
-.popuptext.show {
-    opacity: 0;
-    visibility: visible;
-    -webkit-animation: fadeinout 5s;
-    animation: fadeinout 5s;
-}
-
-@-webkit-keyframes fadeinout {
-    50% { opacity: 1; }
-}
-
-@keyframes fadeinout {
-    50% { opacity: 1; }
+    width: 100%;
 }
 
 .field-text {
     margin-top: 3px;
-    width: 200px;
-    height: 39px;
     background: #273549;
     border-radius: 6px;
     border: none;
-    padding-top: 5px;   
-    font-family: 'Karla';
+    width: 100%;
+    height: 3em;
+    padding-top: 0.9em;
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 32px;
-
-    /* identical to box height, or 200% */
+    font-size: 1rem;
     text-align: center;
-    color: #55F991;
-    
+    color: #55f991;
+    cursor: pointer;
+}
+
+.field-text:hover {
+    opacity: 0.6;
 }
 
 .copy-msg {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
+    margin: 1em 0 2em 0;
 }
 
+/* pop-up text */
+
+.popuptext {
+    visibility: hidden;
+    font-size: 1rem;
+    color: #d5d4d8;
+}
+.popuptext.show {
+    opacity: 0;
+    visibility: visible;
+    -webkit-animation: fadeinout 3s;
+    animation: fadeinout 10s;
+}
+
+@-webkit-keyframes fadeinout {
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeinout {
+    50% {
+        opacity: 1;
+    }
+}
+
+/* media query */
+
+@media (min-width: 500px) {
+    .container {
+        width: 90%;
+    }
+
+    .container-titles {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    .container-intro {
+        width: 80%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: start;
+    }
+    .container-passwords {
+        flex-direction: row;
+        width: 80%;
+    }
+    #passwordOne {
+        padding-right: 0.25em;
+    }
+    #passwordTwo {
+        padding-left: 0.25em;
+    }
+}

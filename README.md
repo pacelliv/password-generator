@@ -9,6 +9,25 @@ The user will be able to:
 
 This project was designed to work on small and big screens.
 
+## Quickstart
+
+To run this repo you will need to install:
+
+-   git
+    -   After installing the package run in ths terminal the command `git --version`, if the installation was successful the ouput should look liks this: `git version x.xx.x.windows.x`. Download [here](https://git-scm.com/).
+-   NodeJs
+    -   After the installation run the command `node --version`, if the ouput looks like `vxx.xx.x` it means the installation was successful. Download [here](https://nodejs.org/en/).
+-   Live Server
+    -   With this extension you will be able to launch development local Server. Download [here](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
+
+Initialize git, clone the repo and cd into the folder
+
+```
+git init
+git clone
+cd path/password-generator
+```
+
 ## Screenshots
 
 <div>
@@ -34,9 +53,9 @@ This project was designed to work on small and big screens.
 -   [@keyframes](https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes)
 -   [@media](https://developer.mozilla.org/en-US/docs/Web/CSS/@media)
 
-## Acknowledgements
+## Acknowledgements 😎 🙌
 
-I acknowledge Scrimba for teaching me the necessary tools to complete this project in my journey to become a full stack developer.
+I want to thanks [Scrimba](https://scrimba.com/) and their team for teaching me the necessary tools to complete this project in my journey to become a full stack developer.
 
 ## Thank you!🎉 🎉
 

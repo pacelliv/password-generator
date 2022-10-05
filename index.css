@@ -123,8 +123,8 @@ button:active {
 .popuptext.show {
     opacity: 0;
     visibility: visible;
-    -webkit-animation: fadeinout 3s;
-    animation: fadeinout 10s;
+    -webkit-animation: fadeinout 1.75s;
+    animation: fadeinout 1.75s;
 }
 
 @-webkit-keyframes fadeinout {

@@ -31,13 +31,13 @@ cd password-generator
 To install the dependecies run:
 
 ```
-Yarn
+yarn
 ```
 
 ## Screenshots
 
 <div align="center">
-    <img src="screenshots/big-screen.JPG">
+    <img src="screenshots/screenshot.png">
 </div>
 
 ## New concepts learned and applied

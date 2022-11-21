@@ -1,22 +1,24 @@
 import characters from "./characters.js"
 
-const myPopUpOne = document.getElementById("myPopUpOne")
-const firstPassword = document.getElementById("field-text-one")
-const secondPassword = document.getElementById("field-text-two")
-const passwordLength = 15
-
-document.getElementById("generateBtn").addEventListener("click", getPasswords)
-document.getElementById("field-text-one").addEventListener("click", copyOne)
-document.getElementById("field-text-two").addEventListener("click", copyTwo)
+document.addEventListener("click", (e) => {
+    if (e.target.id === "generate-btn") {
+        getPasswords()
+    } else if (e.target.id === "field-text-one") {
+        copyPassword(e.target.textContent, "pop-up-text-one")
+    } else if (e.target.id === "field-text-two") {
+        copyPassword(e.target.textContent, "pop-up-text-two")
+    }
+})
 
 function getPasswords() {
-    firstPassword.textContent = generatePasswords()
-    secondPassword.textContent = generatePasswords()
+    document.getElementById("field-text-one").textContent = generatePasswords()
+    document.getElementById("field-text-two").textContent = generatePasswords()
 }
 
 // generatePasswords() creates the ramdon passwords
 function generatePasswords() {
     let password = ""
+    const passwordLength = 15
     for (let i = 0; i < passwordLength; i++) {
         password += getRandomCharacter()
     }
@@ -29,23 +31,13 @@ function getRandomCharacter() {
     return characters[randomIndex]
 }
 
-// The functions copyOne() and copyTwo() copy the passwords
-function copyOne(that) {
-    const inputEl = document.createElement("input")
-    inputEl.value = that.textContent
-    document.body.appendChild(inputEl)
-    inputEl.select()
-    document.execCommand("copy", false)
-    inputEl.remove()
-    myPopUpOne.classList.toggle("show")
-}
-
-function copyTwo(that) {
-    const inputEl = document.createElement("input")
-    inputEl.value = that.textContent
-    document.body.appendChild(inputEl)
-    inputEl.select()
-    document.execCommand("copy", false)
-    inputEl.remove()
-    myPopUpTwo.classList.toggle("show")
+// copyPassword() saves the passwords to the clipboard
+function copyPassword(textContent, id) {
+    const elem = document.createElement("textarea")
+    elem.value = textContent
+    document.body.appendChild(elem)
+    elem.select()
+    document.execCommand("copy")
+    elem.remove()
+    document.getElementById(id).classList.toggle("show")
 }

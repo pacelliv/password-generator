@@ -3,6 +3,14 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Password Generator</title>
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&display=swap"
+            rel="stylesheet"
+        />
+        <!-- CDN -->
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
@@ -14,32 +22,41 @@
         <link rel="stylesheet" href="index.css" />
     </head>
     <body>
-        <div class="container container-flex">
-            <div class="container-intro container-flex">
-                <h1 class="container-titles">
-                    Generate <br /><span>random passwords</span>
-                </h1>
-                <h3 class="subtitle">Never use an insecure password again</h3>
+        <div class="container">
+            <header class="header">
+                <h4 class="logo">< pacelli.dev /></h4>
+            </header>
+            <div class="container-body">
+                <section class="section">
+                    <h1 class="section-title">
+                        Generate <br /><span>random passwords</span>
+                    </h1>
+                    <h3 class="section-subtitle">
+                        Never use an insecure password again.
+                    </h3>
+                    <button id="generate-btn" class="generate-btn">
+                        Generate passwords
+                    </button>
+                </section>
 
-                <button id="generateBtn" class="generate-btn">
-                    Generate passwords
-                </button>
-            </div>
+                <div class="container-passwords">
+                    <div id="password-one" class="passwords">
+                        <span class="pop-up-text" id="pop-up-text-one"
+                            >Copied!</span
+                        >
+                        <p id="field-text-one" class="field-text"></p>
+                    </div>
 
-            <div class="container-passwords container-flex">
-                <div id="passwordOne" class="passwords">
-                    <span class="popuptext" id="myPopUpOne">Copied!</span>
-                    <p id="field-text-one" class="field-text"></p>
+                    <div id="password-two" class="passwords">
+                        <span class="pop-up-text" id="pop-up-text-two"
+                            >Copied!</span
+                        >
+                        <p id="field-text-two" class="field-text"></p>
+                    </div>
                 </div>
-
-                <div id="passwordTwo" class="passwords">
-                    <span class="popuptext" id="myPopUpTwo">Copied!</span>
-                    <p id="field-text-two" class="field-text"></p>
+                <div class="footer">
+                    <h4 class="instruction">Click on a password to copy!</h4>
                 </div>
-            </div>
-
-            <div class="copy-msg">
-                <h3>Click on a password to copy!</h3>
             </div>
         </div>
         <script src="index.js" type="module"></script>

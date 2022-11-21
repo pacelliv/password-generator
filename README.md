@@ -25,6 +25,7 @@ The user will be able to:
 ### Features to be included:
 
 -   Responsive design for small screens
+-   Save to localStorage theme picked by the user
 -   ~~Light/dark mode~~
 
 ## Quickstart

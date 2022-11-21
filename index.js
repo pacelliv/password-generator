@@ -32,7 +32,7 @@ function generatePasswords() {
     return password
 }
 
-/* getRandomCharacter() generates a random index */
+/* generateRandomIndex() generates a random index */
 function generateRandomIndex() {
     let randomIndex = Math.floor(Math.random() * characters.length)
     return characters[randomIndex]

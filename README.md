@@ -25,7 +25,7 @@ The user will be able to:
 ### Features to be included:
 
 -   Responsive design for small screens
--   Ligth/dark mode
+-   Light/dark mode
 
 ## Quickstart
 

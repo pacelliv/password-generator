@@ -7,7 +7,7 @@ document.addEventListener("click", (e) => {
     } else if (e.target.textContent && e.target.previousElementSibling.id) {
         copyPassword(e.target.textContent, e.target.previousElementSibling.id)
     } else if (
-        e.target.id === "toggler" ||
+        e.target.id === "toggler--slider" ||
         e.target.id === "toggler--slider--circle"
     ) {
         toggler()
@@ -32,7 +32,7 @@ function generatePasswords() {
     return password
 }
 
-/* getRandomCharacter() generates 15 random characters */
+/* getRandomCharacter() generates a random index */
 function getRandomCharacter() {
     let randomIndex = Math.floor(Math.random() * characters.length)
     return characters[randomIndex]

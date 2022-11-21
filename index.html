@@ -22,16 +22,26 @@
         <link rel="stylesheet" href="index.css" />
     </head>
     <body>
-        <div class="container">
+        <div class="container" id="container">
             <header class="header">
-                <h4 class="logo">< pacelliv /></h4>
+                <h4 class="logo" id="logo">< pacelliv /></h4>
+                <div class="toggler" id="toggler">
+                    <p class="toggler--light" id="toggler--light">Light</p>
+                    <div class="toggler--slider" id="toggler--slider">
+                        <div
+                            class="toggler--slider--circle"
+                            id="toggler--slider--circle"
+                        ></div>
+                    </div>
+                    <p class="toggler--dark" id="toggler--dark">Dark</p>
+                </div>
             </header>
             <div class="container-body">
                 <section class="section">
-                    <h1 class="section-title">
+                    <h1 class="section-title" id="section-title">
                         Generate <br /><span>random passwords</span>
                     </h1>
-                    <h3 class="section-subtitle">
+                    <h3 class="section-subtitle" id="section-subtitle">
                         Never use an insecure password again.
                     </h3>
                     <button id="generate-btn" class="generate-btn">
@@ -39,7 +49,7 @@
                     </button>
                 </section>
 
-                <div class="container-passwords">
+                <div class="container-passwords" id="container-passwords">
                     <div id="password-one" class="passwords">
                         <span class="pop-up-text" id="pop-up-text-one"
                             >Copied!</span
@@ -55,7 +65,9 @@
                     </div>
                 </div>
                 <div class="footer">
-                    <h4 class="instruction">Click on a password to copy!</h4>
+                    <h4 class="instruction" id="instruction">
+                        Click on a password to copy!
+                    </h4>
                 </div>
             </div>
         </div>

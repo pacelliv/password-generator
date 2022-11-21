@@ -1,12 +1,16 @@
-import characters from "./characters.js"
+import characters from "./utils/characters.js"
+import toggler from "./utils/light-dark-mode.js"
 
 document.addEventListener("click", (e) => {
     if (e.target.id === "generate-btn") {
         getPasswords()
-    } else if (e.target.id === "field-text-one") {
-        copyPassword(e.target.textContent, "pop-up-text-one")
-    } else if (e.target.id === "field-text-two") {
-        copyPassword(e.target.textContent, "pop-up-text-two")
+    } else if (e.target.textContent && e.target.previousElementSibling.id) {
+        copyPassword(e.target.textContent, e.target.previousElementSibling.id)
+    } else if (
+        e.target.id === "toggler" ||
+        e.target.id === "toggler--slider--circle"
+    ) {
+        toggler()
     }
 })
 

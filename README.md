@@ -16,7 +16,7 @@ To run this repo you will need to install:
 -   git
     -   After installing the package run in ths terminal the command `git --version`, if the installation was successful the ouput should look liks this: `git version x.xx.x.windows.x`. Download [here](https://git-scm.com/).
 -   Node Js
-    -   After the installation run the command `node --versio`n, if the ouput looks like `vxx.xx.x` it means the installation was successful. Download [here](https://nodejs.org/en/).
+    -   After the installation run the command `node --version`, if the ouput looks like `vxx.xx.x` it means the installation was successful. Download [here](https://nodejs.org/en/).
 -   Live Server
     -   With this extension you will be able to launch development local Server. Download [here](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
 

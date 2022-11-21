@@ -1,13 +1,31 @@
 # Password Generator
 
+## This is a solution to the password generator solo-project from Scrimba
+
+<div align="center">
+    <img src="screenshots/screenshot.png">
+</div>
+
 ## Overview
 
 The user will be able to:
 
 -   Generate two passwords of 15 long alphanumeric characters.
--   The passwords can be copied to the clipboard by clicking on them, an animation with displayed with a "Copied!" message.
+-   The passwords can be copied to the clipboard by clicking on them, an animation will displayed with a "Copied!" message.
 
-This project was designed to work on small and big screens.
+## Elaboration
+
+### This project was built with:
+
+-   CSS
+-   HTML5 markup
+-   Flexbox
+-   Vanilla JavaScript
+
+### Features to be included:
+
+-   Responsive design for small screens
+-   Ligth/dark mode
 
 ## Quickstart
 
@@ -31,16 +49,14 @@ cd password-generator
 To install the dependecies run:
 
 ```
-yarn
+$ yarn # npm install
 ```
 
-## Screenshots
+### Development
 
-<div align="center">
-    <img src="screenshots/screenshot.png">
-</div>
+After installing the dependencies run Live Server.
 
-## New concepts learned and applied
+## Resources
 
 -   [Variable declaration](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Variables)
     -   [types of variables](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Variables#variable_types)
@@ -58,7 +74,7 @@ yarn
 -   [@keyframes](https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes)
 -   [@media](https://developer.mozilla.org/en-US/docs/Web/CSS/@media)
 
-## Acknowledgements 😎 🙌
+## Acknowledgements
 
 I want to thanks [Scrimba](https://scrimba.com/) and their team for teaching me the necessary tools to complete this project in my journey to become a full stack developer.
 

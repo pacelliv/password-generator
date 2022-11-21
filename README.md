@@ -25,7 +25,7 @@ The user will be able to:
 ### Features to be included:
 
 -   Responsive design for small screens
--   Light/dark mode
+-   ~~Light/dark mode~~
 
 ## Quickstart
 
@@ -73,6 +73,7 @@ After installing the dependencies run Live Server.
 -   [Element.remove()](https://developer.mozilla.org/en-US/docs/Web/API/Element/remove)
 -   [@keyframes](https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes)
 -   [@media](https://developer.mozilla.org/en-US/docs/Web/CSS/@media)
+-   [import](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)
 
 ## Acknowledgements
 

@@ -11,7 +11,7 @@
 The user will be able to:
 
 -   Generate two passwords of 15 long alphanumeric characters.
--   The passwords can be copied to the clipboard by clicking on them, an animation will displayed with a "Copied!" message.
+-   The passwords can be copied to the clipboard by clicking on them and the user will be notified with an message.
 
 ## Elaboration
 

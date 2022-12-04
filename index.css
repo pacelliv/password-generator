@@ -206,7 +206,7 @@ layout
 }
 
 .passwords {
-    margin: 0;
+    margin: 0 0.2em;
     text-align: center;
 }
 
@@ -262,4 +262,10 @@ layout
     }
 }
 
-/* media query */
+/************ media query *************/
+
+@media (max-width: 300px) {
+    .container-passwords {
+        flex-direction: column;
+    }
+}

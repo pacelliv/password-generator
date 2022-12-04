@@ -30,14 +30,12 @@
 }
 
 body {
-    margin: 0;
     height: 100vh;
     background-color: var(--clr-bg);
     font-family: var(--ff-primary);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0.5em;
 }
 
 span {
@@ -266,7 +264,11 @@ layout
 /************ media query *************/
 
 @media (max-width: 300px) {
+    .container-body {
+        text-align: center;
+    }
     .container-passwords {
         flex-direction: column;
+        align-items: center;
     }
 }

@@ -1,16 +1,13 @@
 import characters from "./utils/characters.js"
 import toggler from "./utils/light-dark-mode.js"
 
+document.getElementById("toggler--slider").addEventListener("click", toggler)
+
 document.addEventListener("click", (e) => {
     if (e.target.id === "generate-btn") {
         getPasswords()
     } else if (e.target.textContent && e.target.previousElementSibling.id) {
         copyPassword(e.target.textContent, e.target.previousElementSibling.id)
-    } else if (
-        e.target.id === "toggler--slider" ||
-        e.target.id === "toggler--slider--circle"
-    ) {
-        toggler()
     }
 })
 

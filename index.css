@@ -30,7 +30,6 @@
 }
 
 body {
-    height: 100vh;
     background-color: var(--clr-bg);
     font-family: var(--ff-primary);
     display: flex;
